@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "now";
+  src: url("/fonts/now.regular.otf");
+}
+
+@font-face {
+  font-family: "aleo";
+  src: url("/fonts/Aleo-VariableFont_wght.ttf");
+}
+
+@layer base {
+  html {
+    font-family: aleo, serif;
+    @apply text-neutral;
+  }
+
+  h1 {
+    @apply text-3xl;
+    @apply font-heading;
+  }
+
+  h2 {
+    @apply text-2xl;
+    @apply font-heading;
+  }
+}
+
+#root {
+  --toastify-color-error: #d56c06;
+  --toastify-color-success: #97bf0d;
+  --toastify-text-color-success: #fffcf3;
+  --toastify-text-color-error: #fffcf3;
+  --toastify-z-index: 9999;
+  --toastify-font-family: "aleo";
+}
